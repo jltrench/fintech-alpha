@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fintech</h1>
+    </header>
+
+    <div class="container-1">
+      <div
+        class="panel active"
+        style="background-image: url(assets/control.jpg)"
+      >
+        <h3>Melhor controle financeiro</h3>
+      </div>
+      <div class="panel" style="background-image: url(assets/charts.jpg)">
+        <h3>Informações sobre gastos</h3>
+      </div>
+      <div class="panel" style="background-image: url(assets/invests.jpg)">
+        <h3>Dados sobre investimentos</h3>
+      </div>
+      <div class="panel" style="background-image: url(assets/future.jpg)">
+        <h3>Planeje o seu futuro</h3>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div class="login">
+        <h1>Crie agora sua conta</h1>
+
+        <form method="POST" class="validator">
+          <label>
+            Nome:<br />
+            <input type="text" name="name" data-rules="required|min=2" />
+          </label>
+          <label>
+            E-mail:<br />
+            <input type="text" name="email" data-rules="required|email" />
+          </label>
+          <label>
+            Senha:<br />
+            <input
+              type="password"
+              name="password"
+              data-rules="required|min=5"
+            />
+          </label>
+          <label>
+            <input type="submit" value="Cadastrar" />
+          </label>
+
+          <div class="info">
+            Já tem uma conta? <a href="pages/dashboard.html">Faça o Login</a>
+          </div>
+        </form>
+      </div>
+      <div class="side">
+        <h1>Fintech</h1>
+      </div>
+    </div>
+    <footer>
+      <p>Fintech 2023 - 2024 &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
